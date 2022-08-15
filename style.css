@@ -12,9 +12,9 @@ p {
   width: fit-content;
   padding: 5px;
   background-color: #a8caba;
-  position: relative;
+  /* position: relative;
   left: 500px;
-  top: 250px;
+  top: 250px; */
 }
 
 body {
