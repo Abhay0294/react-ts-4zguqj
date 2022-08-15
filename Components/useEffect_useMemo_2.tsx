@@ -7,6 +7,19 @@ function StateMaintain() {
     name: '',
     selection: false,
   });
+
+  const user = React.useMemo(
+    () => ({
+      name: state.name,
+      selection: state.selection,
+    }),
+    [state.name, state.selection]
+  );
+
+  React.useEffect(() => {
+    console.log('*****Use effect called******');
+  }, [user]);
+
   const handleName = () => {
     setstate((prev) => ({ ...prev, name }));
     //()=>() call in this format while setting in useState
@@ -15,6 +28,8 @@ function StateMaintain() {
   const handleSelection = () => {
     setstate((prev) => ({ ...prev, selection: true }));
   };
+
+  console.log('Component Rendered');
   return (
     <div className="parent-container">
       <input
@@ -25,7 +40,7 @@ function StateMaintain() {
       ></input>
       <button onClick={handleName}> Add Name</button>
       <button onClick={handleSelection}>Selection</button>
-      <div>{`Name: ${state.name} Selection: ${state.selection}`}</div>
+      <div>{`[Name: ${state.name}] [Selection: ${state.selection}]`}</div>
     </div>
   );
 }
