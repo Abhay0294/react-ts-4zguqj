@@ -8,6 +8,11 @@ function StateMaintain() {
     selection: false,
   });
 
+  /**Snap for the most common snippets:
+  https://miro.medium.com/max/790/1*2wDZ1mo7_MHr2Qr2iZCNHg.png
+
+  The return value of useMemo(callback, [dependency]) is NOT void but memoized value(value stored as cached rather recalculating it again) and It executes DURING render().
+  */
   const user = React.useMemo(
     () => ({
       name: state.name,
@@ -16,6 +21,9 @@ function StateMaintain() {
     [state.name, state.selection]
   );
 
+  /**
+   * The return value of useEffect(callback, [dependency]) is void and It executes after render().
+   */
   React.useEffect(() => {
     console.log('*****Use effect called******');
   }, [user]);
