@@ -8,9 +8,15 @@ p {
 .parent-container {
   display: inline-block;
   align-items: center;
-  position: relative;
-  left: 650px;
   border: 2px solid black;
   width: fit-content;
   padding: 5px;
+  background-color: #a8caba;
+  position: relative;
+  left: 500px;
+  top: 250px;
+}
+
+body {
+  background-color: #50c9c3;
 }
