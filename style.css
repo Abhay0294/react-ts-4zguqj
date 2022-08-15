@@ -1,0 +1,16 @@
+h1,
+p {
+  font-family: Lato;
+}
+.button-counter {
+  cursor: pointer;
+}
+.parent-container {
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  left: 650px;
+  border: 2px solid black;
+  width: fit-content;
+  padding: 5px;
+}
