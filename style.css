@@ -1,3 +1,7 @@
+body {
+  background-color: #50c9c3;
+}
+
 h1,
 p {
   font-family: Lato;
@@ -17,6 +21,13 @@ p {
   top: 250px; */
 }
 
-body {
-  background-color: #50c9c3;
+.list-container {
+  display: inline-block;
+  background-color: burlywood;
+  border: 2px solid black;
+}
+
+.list-items {
+  display: flex;
+  border: 2px solid red;
 }
