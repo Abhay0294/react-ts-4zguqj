@@ -1,3 +1,3 @@
-# react-ts-4zguqj
+# React Core Concepts
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-4zguqj)
+This repository deals in making understand react core concepts
